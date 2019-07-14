@@ -3,5 +3,9 @@
 div {
   margin: $unit;
   min-height: 80vh;
-  background-color: black;
+
+  app-nav {
+    position: absolute;
+    width: calc(100% - #{2 * $unit});
+  }
 }
