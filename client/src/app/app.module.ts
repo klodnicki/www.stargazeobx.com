@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './nav/nav.component';
+import { ParallaximgComponent } from './common/parallaximg/parallaximg/parallaximg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LayoutComponent,
-    NavComponent
+    NavComponent,
+    ParallaximgComponent
   ],
   imports: [
     BrowserModule,

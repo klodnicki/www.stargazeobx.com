@@ -1,0 +1,12 @@
+@import "../../../../styles.scss";
+
+:host {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  max-height: calc(100vh - #{2 * $unit});
+
+  img {
+    width: 100%;
+  }
+}
