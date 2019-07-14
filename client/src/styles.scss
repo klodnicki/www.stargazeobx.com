@@ -1,9 +1,10 @@
 $unit: 15px;
-$navHeight: 45px;
+$navHeight: #{4 * $unit};
 
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
