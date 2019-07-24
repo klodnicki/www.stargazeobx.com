@@ -1,0 +1,25 @@
+body {
+    //background-image: SAND; // set by javascript
+    background-attachment: fixed;
+    
+    #nav {
+        background-color: red;
+    }
+    main {
+        //background-image: SAND-BLURRED // set by javascript
+        background-attachment: fixed;
+        
+        $topBottomPadding: 20px;    //Applied at the top and bottom of every blurred section (seperated by <hr />'s). The top of the element is an exception.
+        padding-top: 5px;
+        margin-top: $topBottomPadding;
+        padding-bottom: $topBottomPadding;
+        margin-bottom: 100px;
+        
+        hr {
+            margin: $topBottomPadding 0px $topBottomPadding 0px;
+            border: 0px;
+            height: 50px;
+            background-attachment: fixed;
+        }
+    }
+}

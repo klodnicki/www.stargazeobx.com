@@ -1,0 +1,17 @@
+body {
+  background-attachment: fixed; }
+  body #nav {
+    background-color: red; }
+  body main {
+    background-attachment: fixed;
+    padding-top: 5px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px; }
+    body main hr {
+      margin: 20px 0px 20px 0px;
+      border: 0px;
+      height: 50px;
+      background-attachment: fixed; }
+
+/*# sourceMappingURL=css.css.map */
