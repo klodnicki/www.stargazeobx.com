@@ -1,1 +1,4 @@
-<img [src]="src" />
+<img *ngIf="src" [src]="src" />
+<div id="content">
+  <ng-content></ng-content>
+</div>

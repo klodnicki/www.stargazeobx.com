@@ -14,24 +14,28 @@
 
     &#links {
       padding-right: 10%;
+      display: flex;
+
+
+      a {
+        &:hover {
+          color: #FDB;
+          transition: 0.5s ease-out;
+        }
+
+        &:active {
+          color: #F80;
+          transition: none;
+        }
+
+        color: white;
+        margin: $unit;
+        font-weight: bolder;
+        text-decoration: none;
+        text-align: center;
+      }
     }
 
-    a {
-      &:hover {
-        color: #FDB;
-        transition: 0.5s ease-out;
-      }
-
-      &:active {
-        color: #F80;
-        transition: none;
-      }
-
-      color: white;
-      margin: $unit;
-      font-weight: bolder;
-      text-decoration: none;
-    }
   }
 
 }
