@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParallaximgComponent } from './parallaximg.component';
+import { BlockComponent } from './block.component';
 
-describe('ParallaximgComponent', () => {
-  let component: ParallaximgComponent;
-  let fixture: ComponentFixture<ParallaximgComponent>;
+describe('BlockComponent', () => {
+  let component: BlockComponent;
+  let fixture: ComponentFixture<BlockComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParallaximgComponent ]
+      declarations: [ BlockComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParallaximgComponent);
+    fixture = TestBed.createComponent(BlockComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

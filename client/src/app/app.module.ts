@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './nav/nav.component';
-import { ParallaximgComponent } from './common/parallaximg/parallaximg/parallaximg.component';
+import { BlockComponent } from './common/block/block.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { ParallaximgComponent } from './common/parallaximg/parallaximg/parallaxi
     HomeComponent,
     LayoutComponent,
     NavComponent,
-    ParallaximgComponent
+    BlockComponent
   ],
   imports: [
     BrowserModule,
