@@ -5,7 +5,6 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: calc(100vh - #{2 * $unit});
 
   .bg {
     display: block;

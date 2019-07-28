@@ -1,15 +1,16 @@
-import { Component, OnInit, Input, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, HostListener, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-block',
   templateUrl: './block.component.html',
   styleUrls: ['./block.component.scss']
 })
-export class BlockComponent implements OnInit {
-  @Input() src: string;
+export class BlockComponent implements OnInit, OnChanges {
+  @Input() background: string;
   @Input() parallaxDistance = 0;
-  @ViewChild('bg') bg;
-  @ViewChild('fg') fg;
+  @Input() shrink = false;
+  @ViewChild('bg') private bg;
+  @ViewChild('fg') private fg;
 
   constructor() {}
 
@@ -17,7 +18,12 @@ export class BlockComponent implements OnInit {
     this.parallaxScroll();
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes.parallaxDistance) { this.parallaxScroll(); }
+  }
+
   @HostListener('window:scroll')
+  @HostListener('window:wheel')
   @HostListener('window:resize')
   private parallaxScroll() {
     if (this.parallaxDistance === 0) { return; }

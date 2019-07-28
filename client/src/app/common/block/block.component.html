@@ -1,7 +1,7 @@
-<div #bg class="bg" style.backgroundImage="url({{src}})">
+<div #bg class="bg" [style.backgroundImage]="background">
 <!--  <img *ngIf="src" [src]="src" /> -->
 </div>
-<div #fg class="fg">
+<div #fg class="fg" [style.minHeight]="shrink ? '0px' : undefined">
   <div class="fg-inner">
     <ng-content></ng-content>
   </div>
