@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './nav/nav.component';
 import { BlockComponent } from './common/block/block.component';
+import { BlockSideTitleComponent } from './common/block-side-title/block-side-title.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BlockComponent } from './common/block/block.component';
     HomeComponent,
     LayoutComponent,
     NavComponent,
-    BlockComponent
+    BlockComponent,
+    BlockSideTitleComponent
   ],
   imports: [
     BrowserModule,

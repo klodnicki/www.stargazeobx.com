@@ -1,0 +1,25 @@
+#flexbox {
+  display: flex;
+  // Set with template: flex-direction: row | row-reverse;
+  width: 100%;
+
+  > div {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
+    > div {
+      width: 100%;
+
+      padding: 6em;
+    }
+  }
+
+  #title {
+    width: 40%;
+  }
+
+  #content {
+    width: 60%;
+  }
+}

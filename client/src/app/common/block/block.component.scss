@@ -26,9 +26,13 @@
 
   .fg {
     display: flex;
-    justify-content: space-around;
+    justify-content: stretch;
     align-items: center;
     width: 100%;
     min-height: calc(100vh - #{2 * $edgeMargin});
+
+    .fg-inner {
+      width: 100%;
+    }
   }
 }
