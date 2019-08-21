@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './nav/nav.component';
 import { BlockComponent } from './common/block/block.component';
 import { BlockSideTitleComponent } from './common/block-side-title/block-side-title.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BlockSideTitleComponent } from './common/block-side-title/block-side-ti
     LayoutComponent,
     NavComponent,
     BlockComponent,
-    BlockSideTitleComponent
+    BlockSideTitleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

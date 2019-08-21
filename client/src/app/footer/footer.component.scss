@@ -1,0 +1,11 @@
+@import "../../styles.scss";
+
+#footerFlex {
+  display: flex;
+  justify-content: stretch;
+
+  > * {
+    flex-grow: 1;
+    padding: $innerPadding;
+  }
+}

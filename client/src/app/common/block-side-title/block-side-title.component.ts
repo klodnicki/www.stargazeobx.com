@@ -7,13 +7,14 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 })
 export class BlockSideTitleComponent implements OnChanges {
   @Input() background: string;
+  @Input() backgroundImage: string;
   @Input() parallaxDistance = 1;
   @Input() shrink = false;
   @Input() title: string;
   @Input() rightTitle: boolean;
   @Input() ratio = 0.5;
-  private contentWidth = '50%';
-  private titleWidth = '50%';
+  public contentWidth = '50%';
+  public titleWidth = '50%';
 
   constructor() { }
 

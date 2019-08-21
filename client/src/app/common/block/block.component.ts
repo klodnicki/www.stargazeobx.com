@@ -7,6 +7,7 @@ import { Component, OnInit, Input, ViewChild, HostListener, OnChanges, SimpleCha
 })
 export class BlockComponent implements OnInit, OnChanges {
   @Input() background: string;
+  @Input() backgroundImage: string;
   @Input() parallaxDistance = 1;
   @Input() shrink = false;
   @ViewChild('bg') private bg;
