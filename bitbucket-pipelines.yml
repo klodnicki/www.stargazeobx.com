@@ -1,0 +1,41 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.15.3
+
+pipelines:
+  branches:
+    rewrite:
+      - step:
+          name: Build Angular
+          caches:
+            - node
+          script: # Modify the commands below to build your repository.
+            - cd client
+            - npm i
+            - npm run build -- --prod
+          artifacts:
+            - client/dist/stargazeobx/*
+            - client/dist/stargazeobx/**/*
+            - client/dist/stargazeobx/.htaccess
+      - step:
+          name: Deploy Angular to kserv
+          deployment: production
+          script:
+            - cd client/dist/stargazeobx
+            - pipe: atlassian/sftp-deploy:0.4.0
+              variables:
+                USER: 'ci-stargazeobx-com'
+                SERVER: 'kserv.klodnicki.com'
+                REMOTE_PATH: 'new'
+                LOCAL_PATH: '*'
+                EXTRA_ARGS: '-P 2222'
+            - pipe: atlassian/sftp-deploy:0.4.0
+              variables:
+                USER: 'ci-stargazeobx-com'
+                SERVER: 'kserv.klodnicki.com'
+                REMOTE_PATH: 'new'
+                LOCAL_PATH: '.htaccess'
+                EXTRA_ARGS: '-P 2222'
