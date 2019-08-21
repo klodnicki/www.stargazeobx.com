@@ -1,12 +1,12 @@
 @import "../../styles.scss";
 
 div {
-  margin: $unit;
+  margin: $edgeMargin;
   min-height: 80vh;
 
   app-nav {
     position: absolute;
-    width: calc(100% - #{2 * $unit});
+    width: calc(100% - #{2 * $edgeMargin});
     z-index: 100;
   }
 }

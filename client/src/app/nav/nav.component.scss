@@ -2,10 +2,10 @@
 
 :host {
   display: flex;
-  height: $navHeight;
+//  height: $navHeight;
   align-items: center;
-  padding-left: #{4 * $unit};
-  padding-right: #{4 * $unit};
+  padding-left: $edgeMargin;
+  padding-right: $edgeMargin;
 
   div {
     &#spacer {
@@ -29,7 +29,7 @@
         }
 
         color: white;
-        margin: $unit;
+        margin: 15px;
         font-weight: bolder;
         text-decoration: none;
         text-align: center;
