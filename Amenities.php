@@ -14,7 +14,7 @@ div#main {font-size: 150%;};
 	<?php include('PHPDocs/menu.php'); ?>
 	
 <img src="Images/Amenities/1.jpg" class="right"><div id="main">	
-* 4 bdrm – Q/Q/2B/2S<br>
+* 4 bdrm: Q/Q/2B/2S<br>
 * Upscaling DVD and HDTV in Great room<br>
 * CTV/DVD in all bedrms<br>
 * Gas fireplace, ceiling fans<br>
