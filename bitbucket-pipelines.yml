@@ -18,4 +18,4 @@ pipelines:
                 SERVER: 'kserv.klodnicki.com'
                 REMOTE_PATH: 'www'
                 LOCAL_PATH: '*'
-                EXTRA_ARGS: '-P 2222'
+                EXTRA_ARGS: '-p -P 2222'
