@@ -23,6 +23,6 @@ pipelines:
               variables:
                 SSH_USER: 'ci-stargazeobx-com'
                 SERVER: 'kserv.klodnicki.com'
+                PORT: '2222'
                 COMMAND: 'cd www && chmod -R 755 *'
-                EXTRA_ARGS: '-p 2222'
 
