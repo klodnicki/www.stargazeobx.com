@@ -24,4 +24,5 @@ pipelines:
                 SSH_USER: 'ci-stargazeobx-com'
                 SERVER: 'kserv.klodnicki.com'
                 COMMAND: 'cd www && chmod -R 755 *'
+                EXTRA_ARGS: '-p 2222'
 
