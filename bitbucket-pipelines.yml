@@ -18,4 +18,10 @@ pipelines:
                 SERVER: 'kserv.klodnicki.com'
                 REMOTE_PATH: 'www'
                 LOCAL_PATH: '*'
-                EXTRA_ARGS: '-p -P 2222'
+                EXTRA_ARGS: '-P 2222'
+            - pipe: atlassian/ssh-run:0.2.2
+              variables:
+                SSH_USER: 'ci-stargazeobx-com'
+                SERVER: 'kserv.klodnicki.com'
+                COMMAND: 'cd www && chmod -R 755 *'
+
