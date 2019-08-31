@@ -28,7 +28,7 @@
 <a href="photos.php">Photos</a> | 
 <a href="Amenities.php">Amenities</a> | 
 <a href="map.php">Map</a> | 
-<a href="http://www.hatterasrealty.com/rental/house.html?ID=100#rate">Rates</a><!-- |
+<a href="http://www.hatterasrealty.com/rental/house.html?ID=100#rate" target="_blank">Rates</a><!-- |
 <a href="http://www.hatterasrealty.com/calendar/availcal.html?ID=100&UN=Star%2BGaze&StartDay=SUN&Arrival=&Stay=">Availability</a>--> |
 <a href="info.php">Information</a><!-- |
 <a href="weather.php">Weather</a>--><!-- |
