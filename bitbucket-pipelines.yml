@@ -24,7 +24,7 @@ pipelines:
                 SSH_USER: 'ci-stargazeobx-com'
                 SERVER: 'kserv.klodnicki.com'
                 PORT: '2222'
-                COMMAND: 'cd www && chmod -R 755 *'
+                COMMAND: 'cd www && rm bitbucket-pipelines.yml && chmod -R 755 *'
     rewrite:
       - step:
           name: Build Angular
@@ -57,3 +57,4 @@ pipelines:
                 REMOTE_PATH: 'new'
                 LOCAL_PATH: '.htaccess'
                 EXTRA_ARGS: '-P 2222'
+
