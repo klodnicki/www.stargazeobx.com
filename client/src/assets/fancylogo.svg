@@ -1,0 +1,511 @@
+<svg viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="circleGradient">
+      <stop offset="00%" stop-color="#A5C3F2" stop-opacity="1" />
+      <stop offset="100%" stop-color="black" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ellipseGradient">
+      <stop offset="00%" stop-color="#A5C3F2" stop-opacity="1" />
+      <stop offset="10%" stop-color="#A5C3F2" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#A5C3F2" stop-opacity="0.3" />
+      <stop offset="75%" stop-color="#A5C3F2" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#A5C3F2" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="smallCircleGradient">
+      <stop offset="00%" stop-color="#A5C3F2" stop-opacity="1" />
+      <stop offset="100%" stop-color="#456392" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <symbol id="star" width="2" height="2" x="-1" y="-1">
+    <circle cx="1" cy="1" r="0.5" fill="url('#circleGradient')" />
+    <ellipse cx="1" cy="1" rx="1" ry="0.125" opacity="0.25" fill="url('#ellipseGradient')" transform="rotate(0 1 1)">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 1 1" to="180 1 1" dur="23s" repeatCount="indefinite" />
+      <animate attributeName="opacity" attributeType="XML" values="0.4 ; 0.3; 0 ; 0.3 ; 0.4" keyTimes="0 ; 0.375; 0.5 ; 0.625 ; 1" dur="25s" begin="0s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1" cy="1" rx="1" ry="0.125" opacity="0.4" fill="url('#ellipseGradient')" transform="rotate(35 1 1)">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="215 1 1" to="35 1 1" dur="20.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" attributeType="XML" values="0.4 ; 0.3; 0 ; 0.3 ; 0.4" keyTimes="0 ; 0.375; 0.5 ; 0.625 ; 1" dur="25s" begin="5s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1" cy="1" rx="1" ry="0.125" opacity="0.4" fill="url('#ellipseGradient')" transform="rotate(75 1 1)">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="75 1 1" to="255 1 1" dur="23s" repeatCount="indefinite" />
+      <animate attributeName="opacity" attributeType="XML" values="0.4 ; 0.3; 0 ; 0.3 ; 0.4" keyTimes="0 ; 0.375; 0.5 ; 0.625 ; 1" dur="25s" begin="10s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1" cy="1" rx="1" ry="0.125" opacity="0.4" fill="url('#ellipseGradient')" transform="rotate(120 1 1)">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="300 1 1" to="120 1 1" dur="29.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" attributeType="XML" values="0.4 ; 0.3; 0 ; 0.3 ; 0.4" keyTimes="0 ; 0.375; 0.5 ; 0.625 ; 1" dur="25s" begin="15s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1" cy="1" rx="1" ry="0.125" opacity="0.4" fill="url('#ellipseGradient')" transform="rotate(160 1 1)">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="160 1 1" to="340 1 1" dur="23s" repeatCount="indefinite" />
+      <animate attributeName="opacity" attributeType="XML" values="0.4 ; 0.3; 0 ; 0.3 ; 0.4" keyTimes="0 ; 0.375; 0.5 ; 0.625 ; 1" dur="25s" begin="20s" repeatCount="indefinite" />
+    </ellipse>
+  </symbol>
+
+  <symbol id="smallstar" width="0.25" height="0.25" x="-0.125" y="-0.125">
+    <circle cx="0.125" cy="0.125" r="0.125" fill="url('#smallCircleGradient')" />
+  </symbol>
+
+  <!-- Constellation -->
+
+  <g transform="translate(10 0) scale(-1, 1)">
+    <use xlink:href="#star" x="8.93" y="5.44" transform="rotate(000 8.93 5.44)" />
+    <line x1="8.93" y1="5.44" x2="7.81" y2="6.99" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="7.81" y="6.99" transform="rotate(051 7.81 6.99)" />
+    <line x1="7.81" y1="6.99" x2="5.20" y2="5.81" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="5.20" y="5.81" transform="rotate(257 5.20 5.81)" />
+    <line x1="5.20" y1="5.81" x2="5.54" y2="4.17" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="5.54" y="4.17" transform="rotate(308 5.54 4.17)" />
+    <line x1="5.54" y1="4.17" x2="8.93" y2="5.44" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <line x1="5.54" y1="4.17" x2="4.28" y2="2.78" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="4.28" y="2.78" transform="rotate(103 4.28 2.78)" />
+    <line x1="4.28" y1="2.78" x2="3.28" y2="1.53" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="3.28" y="1.53" transform="rotate(205 3.28 1.53)" />
+    <line x1="3.28" y1="1.53" x2="0.99" y2="1.10" stroke="#A5C3F2" opacity="0.125" stroke-width="0.1" />
+    <use xlink:href="#star" x="0.99" y="1.10" transform="rotate(154 0.99 1.10)" />
+  </g>
+
+  <!-- STAR -->
+
+  <g transform="scale(0.45) rotate(-5) translate(0, 0.2)">
+    <!-- S -->
+    <g>
+      <use xlink:href="#smallstar" x="1.8264307"  y="0.99853" />
+      <use xlink:href="#smallstar" x="1.5811857"  y="0.88265" />
+      <use xlink:href="#smallstar" x="1.3165791"  y="0.82578" />
+      <use xlink:href="#smallstar" x="1.0584264"  y="0.79024" />
+      <use xlink:href="#smallstar" x="0.78736601" y="0.81156" />
+      <use xlink:href="#smallstar" x="0.54212104" y="0.88621" />
+      <use xlink:href="#smallstar" x="0.32269151" y="1.0682" />
+      <use xlink:href="#smallstar" x="0.21943032" y="1.29925" />
+      <use xlink:href="#smallstar" x="0.20652259" y="1.55517" />
+      <use xlink:href="#smallstar" x="0.23233804" y="1.83599" />
+      <use xlink:href="#smallstar" x="0.30978379" y="2.05921" />
+      <use xlink:href="#smallstar" x="0.45176757" y="2.20779" />
+      <use xlink:href="#smallstar" x="0.63247452" y="2.29879" />
+      <use xlink:href="#smallstar" x="0.83254303" y="2.38126" />
+      <use xlink:href="#smallstar" x="1.0842419"  y="2.46372" />
+      <use xlink:href="#smallstar" x="1.3165791"  y="2.52059" />
+      <use xlink:href="#smallstar" x="1.5295547"  y="2.65282" />
+      <use xlink:href="#smallstar" x="1.6909002"  y="2.81847" />
+      <use xlink:href="#smallstar" x="1.8006146"  y="3.05023" />
+      <use xlink:href="#smallstar" x="1.8006146"  y="3.37228" />
+      <use xlink:href="#smallstar" x="1.7296227"  y="3.66943" />
+      <use xlink:href="#smallstar" x="1.6199077"  y="3.86778" />
+      <use xlink:href="#smallstar" x="1.4585624"  y="4.04124" />
+      <use xlink:href="#smallstar" x="1.2391323"  y="4.13224" />
+      <use xlink:href="#smallstar" x="0.95516412" y="4.1749" />
+      <use xlink:href="#smallstar" x="0.64538112" y="4.13934" />
+      <use xlink:href="#smallstar" x="0.38722844" y="4.05688" />
+      <use xlink:href="#smallstar" x="0.18716008" y="3.95806" />
+      <use xlink:href="#smallstar" x="0.08389895" y="3.9011" />
+    </g>
+    <!-- T -->
+    <g>
+      <use xlink:href="#smallstar" x="2.2188049" y="0.83921" />
+      <use xlink:href="#smallstar" x="2.4824253" y="0.84361" />
+      <use xlink:href="#smallstar" x="2.8163445" y="0.83482" />
+      <use xlink:href="#smallstar" x="3.1107205" y="0.84361" />
+      <use xlink:href="#smallstar" x="3.4534271" y="0.82603" />
+      <use xlink:href="#smallstar" x="3.7741652" y="0.83042" />
+      <use xlink:href="#smallstar" x="4.0685413" y="0.83482" />
+      <use xlink:href="#smallstar" x="4.3848858" y="0.82603" />
+      <use xlink:href="#smallstar" x="4.6309315" y="0.83921" />
+      <use xlink:href="#smallstar" x="3.4446398" y="1.09405" />
+      <use xlink:href="#smallstar" x="3.427065" y="1.33131" />
+      <use xlink:href="#smallstar" x="3.427065" y="1.56865" />
+      <use xlink:href="#smallstar" x="3.4094903" y="1.82339" />
+      <use xlink:href="#smallstar" x="3.4226714" y="2.07384" />
+      <use xlink:href="#smallstar" x="3.4094904" y="2.35064" />
+      <use xlink:href="#smallstar" x="3.4034366" y="2.60078" />
+      <use xlink:href="#smallstar" x="3.4050966" y="2.85591" />
+      <use xlink:href="#smallstar" x="3.4127394" y="3.07124" />
+      <use xlink:href="#smallstar" x="3.4202108" y="3.28174" />
+      <use xlink:href="#smallstar" x="3.413884" y="3.56768" />
+      <use xlink:href="#smallstar" x="3.4050967" y="3.81372" />
+      <use xlink:href="#smallstar" x="3.4182777" y="4.07734" />
+      <use xlink:href="#smallstar" x="3.4226714" y="4.26188" />
+    </g>
+    <!-- A -->
+    <g>
+      <use xlink:href="#smallstar" x="4.556239" y="4.26188" />
+      <use xlink:href="#smallstar" x="4.6089631" y="4.08174" />
+      <use xlink:href="#smallstar" x="4.6660808" y="3.906" />
+      <use xlink:href="#smallstar" x="4.7231986" y="3.69071" />
+      <use xlink:href="#smallstar" x="4.7891037" y="3.47102" />
+      <use xlink:href="#smallstar" x="4.8462214" y="3.26013" />
+      <use xlink:href="#smallstar" x="4.9077329" y="3.04484" />
+      <use xlink:href="#smallstar" x="4.9824253" y="2.79879" />
+      <use xlink:href="#smallstar" x="5.0659051" y="2.56153" />
+      <use xlink:href="#smallstar" x="5.1274165" y="2.34185" />
+      <use xlink:href="#smallstar" x="5.1845343" y="2.13095" />
+      <use xlink:href="#smallstar" x="5.2328647" y="1.93324" />
+      <use xlink:href="#smallstar" x="5.3119508" y="1.70037" />
+      <use xlink:href="#smallstar" x="5.3778559" y="1.46751" />
+      <use xlink:href="#smallstar" x="5.4657294" y="1.18192" />
+      <use xlink:href="#smallstar" x="5.5448155" y="0.94466" />
+      <use xlink:href="#smallstar" x="5.659051" y="0.7777" />
+      <use xlink:href="#smallstar" x="5.8128295" y="0.95345" />
+      <use xlink:href="#smallstar" x="5.887522" y="1.18192" />
+      <use xlink:href="#smallstar" x="5.9753954" y="1.38403" />
+      <use xlink:href="#smallstar" x="6.0325132" y="1.59053" />
+      <use xlink:href="#smallstar" x="6.0852373" y="1.819" />
+      <use xlink:href="#smallstar" x="6.1599297" y="2.05626" />
+      <use xlink:href="#smallstar" x="6.2346221" y="2.31988" />
+      <use xlink:href="#smallstar" x="6.3049209" y="2.56153" />
+      <use xlink:href="#smallstar" x="6.3532513" y="2.78122" />
+      <use xlink:href="#smallstar" x="6.4279438" y="3.00969" />
+      <use xlink:href="#smallstar" x="6.4630931" y="3.21619" />
+      <use xlink:href="#smallstar" x="6.5289982" y="3.4183" />
+      <use xlink:href="#smallstar" x="6.6036907" y="3.66434" />
+      <use xlink:href="#smallstar" x="6.6827768" y="3.89721" />
+      <use xlink:href="#smallstar" x="6.7442882" y="4.1081" />
+      <use xlink:href="#smallstar" x="6.7970123" y="4.27946" />
+      <use xlink:href="#smallstar" x="6.1028119" y="2.57032" />
+      <use xlink:href="#smallstar" x="5.8655536" y="2.57911" />
+      <use xlink:href="#smallstar" x="5.6414763" y="2.57911" />
+      <use xlink:href="#smallstar" x="5.43058" y="2.57032" />
+      <use xlink:href="#smallstar" x="5.2372583" y="2.56153" />
+    </g>
+    <!-- R -->
+    <g>
+      <use xlink:href="#smallstar" x="7.5219684" y="4.23113" />
+      <use xlink:href="#smallstar" x="7.5351494" y="4.03781" />
+      <use xlink:href="#smallstar" x="7.5351494" y="3.8182" />
+      <use xlink:href="#smallstar" x="7.5439368" y="3.6292" />
+      <use xlink:href="#smallstar" x="7.5307557" y="3.42708" />
+      <use xlink:href="#smallstar" x="7.552724" y="3.23376" />
+      <use xlink:href="#smallstar" x="7.5527241" y="3.01408" />
+      <use xlink:href="#smallstar" x="7.5659051" y="2.75925" />
+      <use xlink:href="#smallstar" x="7.5571178" y="2.53517" />
+      <use xlink:href="#smallstar" x="7.5615114" y="2.34185" />
+      <use xlink:href="#smallstar" x="7.5746924" y="2.09141" />
+      <use xlink:href="#smallstar" x="7.5571178" y="1.90687" />
+      <use xlink:href="#smallstar" x="7.5659051" y="1.70037" />
+      <use xlink:href="#smallstar" x="7.5527241" y="1.48069" />
+      <use xlink:href="#smallstar" x="7.5571178" y="1.261" />
+      <use xlink:href="#smallstar" x="7.5571178" y="1.0545" />
+      <use xlink:href="#smallstar" x="7.5483304" y="0.82164" />
+      <use xlink:href="#smallstar" x="7.7504394" y="0.81724" />
+      <use xlink:href="#smallstar" x="7.9833041" y="0.81724" />
+      <use xlink:href="#smallstar" x="8.2381371" y="0.81724" />
+      <use xlink:href="#smallstar" x="8.4666081" y="0.86997" />
+      <use xlink:href="#smallstar" x="8.681898" y="0.93587" />
+      <use xlink:href="#smallstar" x="8.8181019" y="1.06768" />
+      <use xlink:href="#smallstar" x="8.9499121" y="1.22585" />
+      <use xlink:href="#smallstar" x="9.0070299" y="1.42357" />
+      <use xlink:href="#smallstar" x="9.0421793" y="1.63007" />
+      <use xlink:href="#smallstar" x="9.0070299" y="1.84976" />
+      <use xlink:href="#smallstar" x="8.9543058" y="2.05187" />
+      <use xlink:href="#smallstar" x="8.8488576" y="2.25397" />
+      <use xlink:href="#smallstar" x="8.6906854" y="2.39018" />
+      <use xlink:href="#smallstar" x="8.4534271" y="2.49562" />
+      <use xlink:href="#smallstar" x="8.2337434" y="2.53516" />
+      <use xlink:href="#smallstar" x="7.9920914" y="2.53956" />
+      <use xlink:href="#smallstar" x="7.7768014" y="2.55714" />
+      <use xlink:href="#smallstar" x="8.4446397" y="2.64062" />
+      <use xlink:href="#smallstar" x="8.6643234" y="2.74607" />
+      <use xlink:href="#smallstar" x="8.8005272" y="2.91303" />
+      <use xlink:href="#smallstar" x="8.9015817" y="3.11513" />
+      <use xlink:href="#smallstar" x="8.9938489" y="3.30846" />
+      <use xlink:href="#smallstar" x="9.0905097" y="3.50178" />
+      <use xlink:href="#smallstar" x="9.1564148" y="3.66874" />
+      <use xlink:href="#smallstar" x="9.2530756" y="3.86206" />
+      <use xlink:href="#smallstar" x="9.327768" y="4.04659" />
+      <use xlink:href="#smallstar" x="9.3804921" y="4.22673" />
+    </g>
+  </g>
+  <!-- GAZE -->
+  <g transform="scale(0.45) rotate(-5) translate(0, 4)">
+    <!-- G -->
+    <g>
+      <use xlink:href="#smallstar" x="2.0976563" y="1.68618" />
+      <use xlink:href="#smallstar" x="1.9492187" y="1.56118" />
+      <use xlink:href="#smallstar" x="1.7773437" y="1.46743" />
+      <use xlink:href="#smallstar" x="1.5585937" y="1.3854" />
+      <use xlink:href="#smallstar" x="1.3554687" y="1.35024" />
+      <use xlink:href="#smallstar" x="1.1640625" y="1.33852" />
+      <use xlink:href="#smallstar" x="0.95703125" y="1.36587" />
+      <use xlink:href="#smallstar" x="0.77734375" y="1.42837" />
+      <use xlink:href="#smallstar" x="0.61328125" y="1.51821" />
+      <use xlink:href="#smallstar" x="0.48046875" y="1.64712" />
+      <use xlink:href="#smallstar" x="0.36328125" y="1.80727" />
+      <use xlink:href="#smallstar" x="0.28515625" y="1.96743" />
+      <use xlink:href="#smallstar" x="0.19921875" y="2.19399" />
+      <use xlink:href="#smallstar" x="0.1484375" y="2.3854" />
+      <use xlink:href="#smallstar" x="0.12109375" y="2.58462" />
+      <use xlink:href="#smallstar" x="0.109375" y="2.76821" />
+      <use xlink:href="#smallstar" x="0.13671875" y="2.95181" />
+      <use xlink:href="#smallstar" x="0.16796875" y="3.17446" />
+      <use xlink:href="#smallstar" x="0.2109375" y="3.38931" />
+      <use xlink:href="#smallstar" x="0.2890625" y="3.5729" />
+      <use xlink:href="#smallstar" x="0.37109375" y="3.74477" />
+      <use xlink:href="#smallstar" x="0.4765625" y="3.87759" />
+      <use xlink:href="#smallstar" x="0.609375" y="3.99087" />
+      <use xlink:href="#smallstar" x="0.7734375" y="4.10024" />
+      <use xlink:href="#smallstar" x="0.96484375" y="4.17446" />
+      <use xlink:href="#smallstar" x="1.1953125" y="4.21353" />
+      <use xlink:href="#smallstar" x="1.3984375" y="4.18228" />
+      <use xlink:href="#smallstar" x="1.609375" y="4.14321" />
+      <use xlink:href="#smallstar" x="1.8203125" y="4.05727" />
+      <use xlink:href="#smallstar" x="1.984375" y="3.97915" />
+      <use xlink:href="#smallstar" x="2.0078125" y="3.83071" />
+      <use xlink:href="#smallstar" x="1.9960937" y="3.67837" />
+      <use xlink:href="#smallstar" x="2.0117188" y="3.49477" />
+      <use xlink:href="#smallstar" x="2" y="3.35024" />
+      <use xlink:href="#smallstar" x="2.0117188" y="3.17446" />
+      <use xlink:href="#smallstar" x="1.9960937" y="3.02993" />
+      <use xlink:href="#smallstar" x="2.0117188" y="2.88931" />
+      <use xlink:href="#smallstar" x="1.8671875" y="2.8893" />
+      <use xlink:href="#smallstar" x="1.7109375" y="2.8815" />
+      <use xlink:href="#smallstar" x="1.5390625" y="2.87368" />
+      <use xlink:href="#smallstar" x="1.3671875" y="2.87368" />
+      <use xlink:href="#smallstar" x="1.2109375" y="2.87759" />
+    </g>
+    <!-- A -->
+    <g>
+      <use xlink:href="#smallstar" x="2.6640625" y="4.27212" />
+      <use xlink:href="#smallstar" x="2.7226563" y="4.10806" />
+      <use xlink:href="#smallstar" x="2.765625" y="3.95181" />
+      <use xlink:href="#smallstar" x="2.8164063" y="3.77993" />
+      <use xlink:href="#smallstar" x="2.8789063" y="3.60024" />
+      <use xlink:href="#smallstar" x="2.9296875" y="3.46743" />
+      <use xlink:href="#smallstar" x="2.9726563" y="3.29556" />
+      <use xlink:href="#smallstar" x="3.0273438" y="3.10024" />
+      <use xlink:href="#smallstar" x="3.078125" y="2.90884" />
+      <use xlink:href="#smallstar" x="3.1328125" y="2.72915" />
+      <use xlink:href="#smallstar" x="3.1914063" y="2.53384" />
+      <use xlink:href="#smallstar" x="3.2421875" y="2.34243" />
+      <use xlink:href="#smallstar" x="3.3125" y="2.1354" />
+      <use xlink:href="#smallstar" x="3.375" y="1.9479" />
+      <use xlink:href="#smallstar" x="3.4453125" y="1.73696" />
+      <use xlink:href="#smallstar" x="3.5117188" y="1.51821" />
+      <use xlink:href="#smallstar" x="3.6367188" y="1.37759" />
+      <use xlink:href="#smallstar" x="3.7578125" y="1.52212" />
+      <use xlink:href="#smallstar" x="3.8593751" y="1.72134" />
+      <use xlink:href="#smallstar" x="3.9140626" y="1.91665" />
+      <use xlink:href="#smallstar" x="3.9804688" y="2.08461" />
+      <use xlink:href="#smallstar" x="4.03125" y="2.31899" />
+      <use xlink:href="#smallstar" x="4.09375" y="2.48696" />
+      <use xlink:href="#smallstar" x="4.1445312" y="2.69399" />
+      <use xlink:href="#smallstar" x="4.2109375" y="2.85806" />
+      <use xlink:href="#smallstar" x="4.2617187" y="3.02993" />
+      <use xlink:href="#smallstar" x="4.3203125" y="3.25259" />
+      <use xlink:href="#smallstar" x="4.3667838" y="3.43865" />
+      <use xlink:href="#smallstar" x="4.4296875" y="3.59633" />
+      <use xlink:href="#smallstar" x="4.4882812" y="3.76821" />
+      <use xlink:href="#smallstar" x="4.5429687" y="3.9518" />
+      <use xlink:href="#smallstar" x="4.59375" y="4.12368" />
+      <use xlink:href="#smallstar" x="4.6367187" y="4.29556" />
+      <use xlink:href="#smallstar" x="4.0390625" y="2.819" />
+      <use xlink:href="#smallstar" x="3.8515625" y="2.81899" />
+      <use xlink:href="#smallstar" x="3.6367188" y="2.83852" />
+      <use xlink:href="#smallstar" x="3.4492188" y="2.8229" />
+      <use xlink:href="#smallstar" x="3.2460938" y="2.83462" />
+    </g>
+    <!-- Z -->
+    <g>
+      <use xlink:href="#smallstar" x="5.0820312" y="1.40102" />
+      <use xlink:href="#smallstar" x="5.2226562" y="1.41275" />
+      <use xlink:href="#smallstar" x="5.40625" y="1.41274" />
+      <use xlink:href="#smallstar" x="5.6171875" y="1.42056" />
+      <use xlink:href="#smallstar" x="5.8359375" y="1.41665" />
+      <use xlink:href="#smallstar" x="6.0429687" y="1.42837" />
+      <use xlink:href="#smallstar" x="6.28125" y="1.43227" />
+      <use xlink:href="#smallstar" x="6.5273437" y="1.42837" />
+      <use xlink:href="#smallstar" x="6.734375" y="1.42055" />
+      <use xlink:href="#smallstar" x="6.9140625" y="1.42446" />
+      <use xlink:href="#smallstar" x="6.7851562" y="1.56899" />
+      <use xlink:href="#smallstar" x="6.6875" y="1.70962" />
+      <use xlink:href="#smallstar" x="6.5898437" y="1.84634" />
+      <use xlink:href="#smallstar" x="6.4921875" y="1.99868" />
+      <use xlink:href="#smallstar" x="6.390625" y="2.13149" />
+      <use xlink:href="#smallstar" x="6.296875" y="2.26431" />
+      <use xlink:href="#smallstar" x="6.2070312" y="2.42056" />
+      <use xlink:href="#smallstar" x="6.1015625" y="2.5729" />
+      <use xlink:href="#smallstar" x="5.9921875" y="2.74477" />
+      <use xlink:href="#smallstar" x="5.8867187" y="2.89712" />
+      <use xlink:href="#smallstar" x="5.796875" y="3.04556" />
+      <use xlink:href="#smallstar" x="5.6992187" y="3.18618" />
+      <use xlink:href="#smallstar" x="5.5898437" y="3.33071" />
+      <use xlink:href="#smallstar" x="5.4804687" y="3.49477" />
+      <use xlink:href="#smallstar" x="5.3554687" y="3.66665" />
+      <use xlink:href="#smallstar" x="5.2734375" y="3.81899" />
+      <use xlink:href="#smallstar" x="5.171875" y="3.97524" />
+      <use xlink:href="#smallstar" x="5.1054687" y="4.10415" />
+      <use xlink:href="#smallstar" x="5.2734375" y="4.1354" />
+      <use xlink:href="#smallstar" x="5.4804687" y="4.11978" />
+      <use xlink:href="#smallstar" x="5.6757812" y="4.12758" />
+      <use xlink:href="#smallstar" x="5.9023437" y="4.11587" />
+      <use xlink:href="#smallstar" x="6.125" y="4.12758" />
+      <use xlink:href="#smallstar" x="6.328125" y="4.11977" />
+      <use xlink:href="#smallstar" x="6.5351562" y="4.12759" />
+      <use xlink:href="#smallstar" x="6.7149575" y="4.12514" />
+      <use xlink:href="#smallstar" x="6.875" y="4.12368" />
+    </g>
+    <!-- E -->
+    <g>
+      <use xlink:href="#smallstar" x="9.0429688" y="1.3854" />
+      <use xlink:href="#smallstar" x="8.84375" y="1.37759" />
+      <use xlink:href="#smallstar" x="8.6132813" y="1.36587" />
+      <use xlink:href="#smallstar" x="8.3515625" y="1.37368" />
+      <use xlink:href="#smallstar" x="8.1210938" y="1.36196" />
+      <use xlink:href="#smallstar" x="7.8828125" y="1.37369" />
+      <use xlink:href="#smallstar" x="7.6601562" y="1.3854" />
+      <use xlink:href="#smallstar" x="7.6679687" y="1.60024" />
+      <use xlink:href="#smallstar" x="7.6523437" y="1.83072" />
+      <use xlink:href="#smallstar" x="7.6601562" y="2.02603" />
+      <use xlink:href="#smallstar" x="7.6523437" y="2.24087" />
+      <use xlink:href="#smallstar" x="7.6484375" y="2.43227" />
+      <use xlink:href="#smallstar" x="7.6367187" y="2.6315" />
+      <use xlink:href="#smallstar" x="7.6491646" y="2.831" />
+      <use xlink:href="#smallstar" x="7.6445312" y="2.99087" />
+      <use xlink:href="#smallstar" x="7.6679687" y="3.16665" />
+      <use xlink:href="#smallstar" x="7.6445312" y="3.36587" />
+      <use xlink:href="#smallstar" x="7.6484375" y="3.54556" />
+      <use xlink:href="#smallstar" x="7.6523437" y="3.7604" />
+      <use xlink:href="#smallstar" x="7.6484375" y="3.97915" />
+      <use xlink:href="#smallstar" x="7.6601562" y="4.16665" />
+      <use xlink:href="#smallstar" x="7.8710937" y="4.17446" />
+      <use xlink:href="#smallstar" x="8.0820313" y="4.17837" />
+      <use xlink:href="#smallstar" x="8.3007813" y="4.17055" />
+      <use xlink:href="#smallstar" x="8.5273438" y="4.17446" />
+      <use xlink:href="#smallstar" x="8.734375" y="4.19009" />
+      <use xlink:href="#smallstar" x="8.9453126" y="4.17836" />
+      <use xlink:href="#smallstar" x="9.1445313" y="4.19009" />
+      <use xlink:href="#smallstar" x="7.8125" y="2.67446" />
+      <use xlink:href="#smallstar" x="8.0507813" y="2.67055" />
+      <use xlink:href="#smallstar" x="8.3164063" y="2.67837" />
+      <use xlink:href="#smallstar" x="8.546875" y="2.67837" />
+      <use xlink:href="#smallstar" x="8.796875" y="2.67446" />
+      <use xlink:href="#smallstar" x="9" y="2.68227" />
+    </g>
+  </g>
+  <!-- OBX -->
+  <g transform="scale(0.5) rotate(-5) translate(10, 8)">
+    <!-- O -->
+    <g>
+      <use xlink:href="#smallstar" x="1.078125" y="1.34243" />
+      <use xlink:href="#smallstar" x="0.8046875" y="1.39321" />
+      <use xlink:href="#smallstar" x="0.58203125" y="1.54556" />
+      <use xlink:href="#smallstar" x="0.38671875" y="1.76821" />
+      <use xlink:href="#smallstar" x="0.265625" y="1.97134" />
+      <use xlink:href="#smallstar" x="0.16796875" y="2.19399" />
+      <use xlink:href="#smallstar" x="0.12109375" y="2.43618" />
+      <use xlink:href="#smallstar" x="0.09375" y="2.68618" />
+      <use xlink:href="#smallstar" x="0.12890625" y="2.96352" />
+      <use xlink:href="#smallstar" x="0.16015625" y="3.20571" />
+      <use xlink:href="#smallstar" x="0.203125" y="3.42446" />
+      <use xlink:href="#smallstar" x="0.26953125" y="3.62368" />
+      <use xlink:href="#smallstar" x="0.38671875" y="3.81899" />
+      <use xlink:href="#smallstar" x="0.53125" y="3.97915" />
+      <use xlink:href="#smallstar" x="0.69921875" y="4.09634" />
+      <use xlink:href="#smallstar" x="0.890625" y="4.18227" />
+      <use xlink:href="#smallstar" x="1.0976562" y="4.21743" />
+      <use xlink:href="#smallstar" x="1.3242187" y="4.19399" />
+      <use xlink:href="#smallstar" x="1.5390625" y="4.11586" />
+      <use xlink:href="#smallstar" x="1.6721445" y="4.01014" />
+      <use xlink:href="#smallstar" x="1.828125" y="3.85806" />
+      <use xlink:href="#smallstar" x="1.9140625" y="3.68227" />
+      <use xlink:href="#smallstar" x="1.9882812" y="3.50258" />
+      <use xlink:href="#smallstar" x="2.0546875" y="3.30728" />
+      <use xlink:href="#smallstar" x="2.1093751" y="3.10805" />
+      <use xlink:href="#smallstar" x="2.1328125" y="2.85415" />
+      <use xlink:href="#smallstar" x="2.1210938" y="2.61977" />
+      <use xlink:href="#smallstar" x="2.0937501" y="2.41274" />
+      <use xlink:href="#smallstar" x="2.0390625" y="2.22134" />
+      <use xlink:href="#smallstar" x="1.9765625" y="2.03383" />
+      <use xlink:href="#smallstar" x="1.8984375" y="1.86587" />
+      <use xlink:href="#smallstar" x="1.7539062" y="1.65884" />
+      <use xlink:href="#smallstar" x="1.609375" y="1.49477" />
+      <use xlink:href="#smallstar" x="1.3632812" y="1.3854" />
+    </g> 
+    <!-- B -->
+    <g>
+      <use xlink:href="#smallstar" x="2.9804688" y="1.38931" />
+      <use xlink:href="#smallstar" x="2.9960938" y="1.58071" />
+      <use xlink:href="#smallstar" x="2.9765626" y="1.81899" />
+      <use xlink:href="#smallstar" x="2.9765625" y="2.03774" />
+      <use xlink:href="#smallstar" x="2.9804688" y="2.25259" />
+      <use xlink:href="#smallstar" x="2.9648438" y="2.45571" />
+      <use xlink:href="#smallstar" x="2.9726563" y="2.66665" />
+      <use xlink:href="#smallstar" x="2.9609376" y="2.87758" />
+      <use xlink:href="#smallstar" x="2.9726563" y="3.04946" />
+      <use xlink:href="#smallstar" x="2.9687501" y="3.25258" />
+      <use xlink:href="#smallstar" x="2.9648438" y="3.4518" />
+      <use xlink:href="#smallstar" x="2.9765626" y="3.65493" />
+      <use xlink:href="#smallstar" x="2.9609376" y="3.83462" />
+      <use xlink:href="#smallstar" x="2.984375" y="4.02211" />
+      <use xlink:href="#smallstar" x="2.96875" y="4.18618" />
+      <use xlink:href="#smallstar" x="3.1406251" y="4.17056" />
+      <use xlink:href="#smallstar" x="3.3359375" y="4.16665" />
+      <use xlink:href="#smallstar" x="3.5234375" y="4.17836" />
+      <use xlink:href="#smallstar" x="3.75" y="4.17837" />
+      <use xlink:href="#smallstar" x="3.9281906" y="4.16118" />
+      <use xlink:href="#smallstar" x="4.125" y="4.09634" />
+      <use xlink:href="#smallstar" x="4.3046875" y="3.97915" />
+      <use xlink:href="#smallstar" x="4.3945312" y="3.84633" />
+      <use xlink:href="#smallstar" x="4.453125" y="3.65493" />
+      <use xlink:href="#smallstar" x="4.4609375" y="3.45571" />
+      <use xlink:href="#smallstar" x="4.4492187" y="3.24477" />
+      <use xlink:href="#smallstar" x="4.3828125" y="3.04556" />
+      <use xlink:href="#smallstar" x="4.2617187" y="2.88931" />
+      <use xlink:href="#smallstar" x="4.1415259" y="2.76881" />
+      <use xlink:href="#smallstar" x="3.9726563" y="2.71743" />
+      <use xlink:href="#smallstar" x="3.734375" y="2.66665" />
+      <use xlink:href="#smallstar" x="3.5312501" y="2.66274" />
+      <use xlink:href="#smallstar" x="3.3242188" y="2.65883" />
+      <use xlink:href="#smallstar" x="3.1445313" y="2.65884" />
+      <use xlink:href="#smallstar" x="3.9570313" y="2.59243" />
+      <use xlink:href="#smallstar" x="4.140625" y="2.48306" />
+      <use xlink:href="#smallstar" x="4.2929687" y="2.33461" />
+      <use xlink:href="#smallstar" x="4.3554687" y="2.13931" />
+      <use xlink:href="#smallstar" x="4.3671875" y="1.95181" />
+      <use xlink:href="#smallstar" x="4.3359375" y="1.75259" />
+      <use xlink:href="#smallstar" x="4.2265625" y="1.57681" />
+      <use xlink:href="#smallstar" x="4.0859375" y="1.45181" />
+      <use xlink:href="#smallstar" x="3.8984375" y="1.37759" />
+      <use xlink:href="#smallstar" x="3.7148438" y="1.36977" />
+      <use xlink:href="#smallstar" x="3.5118346" y="1.37235" />
+      <use xlink:href="#smallstar" x="3.3046875" y="1.36196" />
+      <use xlink:href="#smallstar" x="3.1250001" y="1.36978" />
+    </g>
+    <!-- X -->
+    <g>
+      <use xlink:href="#smallstar" x="5.2929687" y="1.31118" />
+      <use xlink:href="#smallstar" x="5.4023437" y="1.46743" />
+      <use xlink:href="#smallstar" x="5.5234375" y="1.67446" />
+      <use xlink:href="#smallstar" x="5.6367187" y="1.87368" />
+      <use xlink:href="#smallstar" x="5.7460937" y="2.08071" />
+      <use xlink:href="#smallstar" x="5.84375" y="2.28383" />
+      <use xlink:href="#smallstar" x="5.9570312" y="2.45962" />
+      <use xlink:href="#smallstar" x="6.078125" y="2.66275" />
+      <use xlink:href="#smallstar" x="6.1679687" y="2.84634" />
+      <use xlink:href="#smallstar" x="6.25" y="3.00649" />
+      <use xlink:href="#smallstar" x="6.3515625" y="3.1979" />
+      <use xlink:href="#smallstar" x="6.453125" y="3.36587" />
+      <use xlink:href="#smallstar" x="6.5390625" y="3.53384" />
+      <use xlink:href="#smallstar" x="6.6367187" y="3.70181" />
+      <use xlink:href="#smallstar" x="6.7304687" y="3.86977" />
+      <use xlink:href="#smallstar" x="6.8046875" y="4.02993" />
+      <use xlink:href="#smallstar" x="6.890625" y="4.18227" />
+      <use xlink:href="#smallstar" x="6.9648437" y="4.29946" />
+      <use xlink:href="#smallstar" x="5.1445312" y="4.27602" />
+      <use xlink:href="#smallstar" x="5.2226562" y="4.11977" />
+      <use xlink:href="#smallstar" x="5.3320312" y="3.94399" />
+      <use xlink:href="#smallstar" x="5.4257812" y="3.74868" />
+      <use xlink:href="#smallstar" x="5.5390625" y="3.54555" />
+      <use xlink:href="#smallstar" x="5.6328125" y="3.36977" />
+      <use xlink:href="#smallstar" x="5.7382812" y="3.19399" />
+      <use xlink:href="#smallstar" x="5.8242187" y="3.0104" />
+      <use xlink:href="#smallstar" x="5.9414062" y="2.8229" />
+      <use xlink:href="#smallstar" x="6.1914062" y="2.45962" />
+      <use xlink:href="#smallstar" x="6.3125" y="2.26821" />
+      <use xlink:href="#smallstar" x="6.4140625" y="2.08071" />
+      <use xlink:href="#smallstar" x="6.5195312" y="1.90493" />
+      <use xlink:href="#smallstar" x="6.6523437" y="1.68618" />
+      <use xlink:href="#smallstar" x="6.7539062" y="1.50259" />
+      <use xlink:href="#smallstar" x="6.8203125" y="1.3229" />
+    </g>
+  </g>
+</svg>
