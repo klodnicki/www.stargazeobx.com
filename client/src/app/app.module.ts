@@ -10,6 +10,7 @@ import { BlockComponent } from './common/block/block.component';
 import { BlockSideTitleComponent } from './common/block-side-title/block-side-title.component';
 import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './pages/amenities/amenities.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AmenitiesComponent } from './pages/amenities/amenities.component';
     BlockComponent,
     BlockSideTitleComponent,
     FooterComponent,
-    AmenitiesComponent
+    AmenitiesComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
