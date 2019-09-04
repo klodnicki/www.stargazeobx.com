@@ -1,27 +1,36 @@
 @import "../../../style-defs.scss";
 
-#flexbox {
-  display: flex;
-  // Set with template: flex-direction: row | row-reverse;
-  width: 100%;
-
-  > div {
+@media not screen and (max-width: 600px) {
+  #flexbox {
     display: flex;
-    justify-content: stretch;
-    align-items: center;
+    // Set with template: flex-direction: row | row-reverse;
+    width: 100%;
+
+    > div {
+      display: flex;
+      justify-content: stretch;
+      align-items: center;
+      overflow: hidden;
+
+      > div {
+        width: 100%;
+
+        padding: $innerPadding;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #flexbox {
+    display: block;
 
     > div {
       width: 100%;
 
-      padding: $innerPadding;
+      > div {
+        padding: $innerPadding / 4;
+      }
     }
-  }
-
-  #title {
-    width: 40%;
-  }
-
-  #content {
-    width: 60%;
   }
 }

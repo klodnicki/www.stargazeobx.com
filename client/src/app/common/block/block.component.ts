@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, HostListener, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, HostListener, OnChanges, SimpleChanges, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-block',
@@ -10,8 +10,8 @@ export class BlockComponent implements OnInit, OnChanges {
   @Input() backgroundImage: string;
   @Input() parallaxDistance = 1;
   @Input() shrink = false;
-  @ViewChild('bg') private bg;
-  @ViewChild('fg') private fg;
+  @ViewChild('bg') private bg: ElementRef;
+  @ViewChild('fg') private fg: ElementRef;
 
   constructor() {}
 
