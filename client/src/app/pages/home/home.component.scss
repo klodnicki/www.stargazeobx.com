@@ -1,5 +1,7 @@
+@import "../../../style-defs.scss";
+
 :host {
-  display: block;
+  @include page;
 
   #logoContainer {
     height: 75vh;

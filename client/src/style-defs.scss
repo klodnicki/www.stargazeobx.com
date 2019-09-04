@@ -1,2 +1,6 @@
 $edgeMargin: 45px;
 $innerPadding: 6em;
+
+@mixin page {
+  display: block;
+}
