@@ -1,4 +1,8 @@
-#pageTitle {
+:host {
   display: block;
-  height: 60vh;
+
+  #pageTitle {
+    display: block;
+    height: 60vh;
+  }
 }

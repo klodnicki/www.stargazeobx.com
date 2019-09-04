@@ -1,11 +1,15 @@
-#logoContainer {
-  height: 75vh;
+:host {
+  display: block;
 
-  #logo {
-    height: 40vh;
-    background-image: url("/assets/logo.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
+  #logoContainer {
+    height: 75vh;
+
+    #logo {
+      height: 40vh;
+      background-image: url("/assets/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+    }
   }
 }
