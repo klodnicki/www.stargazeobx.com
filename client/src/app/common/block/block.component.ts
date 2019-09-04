@@ -37,6 +37,10 @@ export class BlockComponent implements OnInit, OnChanges {
     const viewportHeight = document.documentElement.clientHeight;
     const thisRect = this.fg.nativeElement.getBoundingClientRect();
 
+    // Quick: if we're off screen, just return right now.
+    if (thisRect.top > viewportHeight) { return; }
+    if (thisRect.top + thisRect.height < 0) { return; }
+
     const scrollStart = 0;
     const scrollEnd = viewportHeight - thisRect.height;
     const scrollNow = thisRect.y;
