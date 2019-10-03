@@ -43,6 +43,12 @@ pipelines:
           deployment: production
           script:
             - cd client/dist/stargazeobx
+            - pipe: atlassian/ssh-run:0.2.2
+              variables:
+                SSH_USER: 'ci-stargazeobx-com'
+                SERVER: 'kserv.klodnicki.com'
+                PORT: '2222'
+                COMMAND: 'cd new && rm -r *'
             - pipe: atlassian/sftp-deploy:0.4.0
               variables:
                 USER: 'ci-stargazeobx-com'
