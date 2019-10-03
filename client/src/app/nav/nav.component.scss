@@ -5,11 +5,11 @@
   align-items: center;
   padding-left: $edgeMargin;
   padding-right: $edgeMargin;
-  margin: 15px;
   overflow: hidden;
 
   #logo {
     white-space: nowrap;
+    font-size: 20pt;
   }
 
   #spacer {
@@ -19,13 +19,15 @@
 
   a {
     color: white;
-    margin: 0px;
+    margin: 10px;
     font-weight: bolder;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
     overflow: visible;
+    font-size: 14pt;
+    background: radial-gradient(rgba(0,0,0,0.2), transparent);
 
     &:hover {
       color: #FDB;
@@ -41,5 +43,16 @@
   .linkspacer {
     flex-basis: 15px;
     flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :host {
+    #logo, #spacer {
+      display: none;
+    }
+
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
