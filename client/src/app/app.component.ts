@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.router.events.pipe(
       filter(event => event instanceof NavigationStart),
-      filter(() => window.scrollY !== 0),
+      filter(() => window.pageYOffset !== 0),
       switchMap(() => {
         const startTime = Date.now();
-        const startScroll = window.scrollY;
+        const startScroll = window.pageYOffset;
         let done = false;
         const curve = BezierEasing(0.42, 0, 0.58, 1.0); // Same as 'ease-in-out'
         return of(0, animationFrameScheduler).pipe(
@@ -31,7 +31,8 @@ export class AppComponent implements OnInit {
           map(() => Math.min((Date.now() - startTime) / SCROLLUP_DURATION, 1)),
           tap(perc => { done = (perc >= 1); }),
           map(perc => curve(perc)),
-          map(pos => startScroll * (1 - pos))
+          map(pos => startScroll * (1 - pos)),
+          tap(console.log)
         );
       })
     ).subscribe(newy => window.scrollTo(window.scrollX, newy));
