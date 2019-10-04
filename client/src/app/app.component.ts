@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
           repeat(),
           takeWhile(() => !done),
           map(() => Math.min((Date.now() - startTime) / SCROLLUP_DURATION, 1)),
-          tap(perc => { if (perc >= 1) { done = true; } }),
+          tap(perc => { done = (perc >= 1); }),
           map(perc => curve(perc)),
           map(pos => startScroll * (1 - pos))
         );
