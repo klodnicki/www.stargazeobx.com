@@ -1,6 +1,5 @@
 <html>
 <head id="head">
-<!-- THIS IS COMING FROM kserv!! -->
 <title>OBX Star Gaze</title>
 <link rel="shortcut icon" href="images/icon.ico">
 <link rel="stylesheet" type="text/css" href="main.css">
