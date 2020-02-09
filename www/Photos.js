@@ -5,8 +5,8 @@ function loading() {
 }
 
 function NewPic(ImgId) {
-	ImgPath = "Images/Photos/Big/" + ImgId + ".jpg";
-	APath = "Images/" + ImgId + ".jpg";
+	ImgPath = "images/Photos/Big/" + ImgId + ".jpg";
+	APath = "images/" + ImgId + ".jpg";
 	CurrentPath = (document.getElementById('MainImage').src).split("http://www.stargazeobx.com/Redesign/");
 	document.getElementById('ImageA').href = APath
 	if (CurrentPath[1] != ImgPath) {

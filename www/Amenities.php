@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>OBX Star Gaze</title>
-<link rel="shortcut icon" href="Images/icon.ico">
+<link rel="shortcut icon" href="images/icon.ico">
 <link rel="stylesheet" type="text/css" href="main.css">
 <style type="text/css"><!--
 div#main {font-size: 150%;};
@@ -13,7 +13,7 @@ div#main {font-size: 150%;};
 <center><div id="container" align="center">
 	<?php include('PHPDocs/menu.php'); ?>
 	
-<img src="Images/Amenities/1.jpg" class="right"><div id="main">	
+<img src="images/Amenities/1.jpg" class="right"><div id="main">	
 * 4 bdrm: Q/Q/2B/2S<br>
 * Upscaling DVD and HDTV in Great room<br>
 * CTV/DVD in all bedrms<br>

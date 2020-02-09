@@ -7,5 +7,5 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
 <!-- end of iPhone detection script -->
 <a href="index.php">
 <center>
-<img src="Images/logo.png" style="display: block;" class="noborder" id="titleImg">
+<img src="images/logo.png" style="display: block;" class="noborder" id="titleImg">
 </center></a>

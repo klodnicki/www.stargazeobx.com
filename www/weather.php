@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>OBX Star Gaze</title>
-<link rel="shortcut icon" href="Images/icon.ico">
+<link rel="shortcut icon" href="images/icon.ico">
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>

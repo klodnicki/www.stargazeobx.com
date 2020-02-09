@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>OBX Star Gaze</title>
-<link rel="shortcut icon" href="Images/icon.ico">
+<link rel="shortcut icon" href="images/icon.ico">
 <link rel="stylesheet" type="text/css" href="main.css">
 <style type="text/css">
 	div#container.WhatsNew {
-		background-image: url("Images/WhatsNew/background.jpg");
+		background-image: url("images/WhatsNew/background.jpg");
 		width: 728;
 		height: 500;
 	}

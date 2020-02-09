@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>OBX Star Gaze</title>
-<link rel="shortcut icon" href="Images/icon.ico">
+<link rel="shortcut icon" href="images/icon.ico">
 <link rel="stylesheet" type="text/css" href="main.css">
 <style type="text/css"><!--
 table#stats td {
@@ -25,10 +25,10 @@ div#LongDescrip img {
 	<?php include('PHPDocs/menu.php'); ?>
 <h2>Description</h2>
 <div id="LongDescrip">
-<a href="Images/5.jpg"><img src="Images/Features/5.jpg" class="right"></a>
-<a href="Images/8.jpg"><img src="Images/Features/8.jpg" class="right"></a>
-<a href="Images/4.jpg"><img src="Images/Features/4.jpg" class="right"></a>
-<a href="Images/3.jpg"><img src="Images/Features/3.jpg" class="right"></a>
+<a href="images/5.jpg"><img src="images/Features/5.jpg" class="right"></a>
+<a href="images/8.jpg"><img src="images/Features/8.jpg" class="right"></a>
+<a href="images/4.jpg"><img src="images/Features/4.jpg" class="right"></a>
+<a href="images/3.jpg"><img src="images/Features/3.jpg" class="right"></a>
 <p>Prepare to be blown away by the awesome sound, ocean, and sky views at our beautiful outer banks home. Experience the best of both worlds in a comfortable, well appointed sound-front home that's only a 3 minute walk to a beautiful un crowded ocean beach.</p>
 
 <p>Feel the stress melt away as you relax in the soothing hot tub at sunset, enjoying panoramic sound to ocean views from the top level covered deck. Unwind on a comfortable deck chair while gazing at the starry sky.</p>

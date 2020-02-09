@@ -1,14 +1,14 @@
 body {
-	background-image: url('Images/sand.jpg');	/* max quality */
+	background-image: url('images/sand.jpg');	/* max quality */
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: #827C6C;
 	background-size: cover;
 }
-@media (max-width: 2048px) and (max-height: 1536px) {body {background-image: url('Images/sand_2048x1536.jpg');}}
-@media (max-width: 1920px) and (max-height: 1440px) {body {background-image: url('Images/sand_1920x1440.jpg');}}
-@media (max-width: 1280px) and (max-height: 960px) {body {background-image: url('Images/sand_1280x960.jpg');}}
-@media (max-width: 1024px) and (max-height: 768px) {body {background-image: url('Images/sand_1024x768.jpg');}}
+@media (max-width: 2048px) and (max-height: 1536px) {body {background-image: url('images/sand_2048x1536.jpg');}}
+@media (max-width: 1920px) and (max-height: 1440px) {body {background-image: url('images/sand_1920x1440.jpg');}}
+@media (max-width: 1280px) and (max-height: 960px) {body {background-image: url('images/sand_1280x960.jpg');}}
+@media (max-width: 1024px) and (max-height: 768px) {body {background-image: url('images/sand_1024x768.jpg');}}
 
 #titleImg {
 	background-color: rgba(255,255,255,0.4);
