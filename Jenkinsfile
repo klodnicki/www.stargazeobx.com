@@ -10,7 +10,8 @@ pipeline {
     }
     stages {
         stage('Notify Start') { steps { script {
-            def gitLog = sh(returnStdout: true, script: "git log --pretty=format:%s ${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}..${GIT_COMMIT}")
+            def from = (env.GIT_PREVIOUS_SUCCESSFUL_COMMIT) ? 'HEAD' : GIT_PREVIOUS_SUCCESSFUL_COMMIT
+            def gitLog = sh(returnStdout: true, script: "git log --pretty=format:%s ${from}..${GIT_COMMIT}")
             emailext attachLog: false, to: '8566935139@msg.fi.google.com', subject: "", body: "Jenkins: Deploying ${env.JOB_BASE_NAME} (${env.BUILD_DISPLAY_NAME}): \n\n${gitLog}"
         }}}
         stage('Setup') { steps { script {
