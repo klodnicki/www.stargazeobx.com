@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NavComponent } from './nav/nav.component';
-import { BlockComponent } from './common/block/block.component';
-import { BlockSideTitleComponent } from './common/block-side-title/block-side-title.component';
 import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './pages/amenities/amenities.component';
 import { Error404Component } from './pages/error404/error404.component';
@@ -24,8 +22,6 @@ import { CenterBlockComponent } from './common/center-block/center-block.compone
     HomeComponent,
     LayoutComponent,
     NavComponent,
-    BlockComponent,
-    BlockSideTitleComponent,
     FooterComponent,
     AmenitiesComponent,
     Error404Component,

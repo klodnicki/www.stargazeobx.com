@@ -3,6 +3,7 @@
 #footerFlex {
   display: flex;
   justify-content: stretch;
+  background: rgb(160, 160, 160);
 
   > * {
     flex-grow: 1;
