@@ -1,11 +1,20 @@
-<app-block backgroundImage="url('assets/boat.jpg')" [parallaxDistance]="3">
-  <div id="pageTitle">
-    <h1>Where are you going?</h1>
-    <h3>The page you requested doesn't exit.</h3>
-  </div>
-</app-block>
-<app-block-side-title title="This page doesn't exist..." [shrink]="true">
-  <p>
-    You may have clicked an old link that no longer works&mdash;perhaps you should just <button routerLink="/">go to the home page</button>?
-  </p>
-</app-block-side-title>
+<section class="wholescreen fill">
+  <app-parallax-background bgImageUrl="assets/boat.jpg" [bgParallaxDistance]="3">
+    <app-center-block>
+      <div id="pageTitle">
+        <h1>Where are you going?</h1>
+        <h3>The page you requested doesn't exist.</h3>
+      </div>
+    </app-center-block>
+  </app-parallax-background>
+</section>
+<section class="columns">
+  <app-center-block>
+    <h1>This page doesn't exist...</h1>
+  </app-center-block>
+  <app-center-block>
+    <p>
+      You may have clicked an old link that no longer works&mdash;perhaps you should just <button routerLink="/">go to the home page</button>?
+    </p>
+  </app-center-block>
+</section>

@@ -2,7 +2,7 @@ import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges } from '
 
 @Component({
   selector: 'app-fitted-image',
-  template: '',
+  template: '<ng-content></ng-content>',
   styleUrls: ['./fitted-image.component.scss']
 })
 export class FittedImageComponent implements OnInit, OnChanges {

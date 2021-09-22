@@ -1,0 +1,10 @@
+<app-parallaxer>
+  <app-parallax-layer [parallaxDistance]="bgParallaxDistance">
+    <app-fitted-image [imageUrl]="bgImageUrl"></app-fitted-image>
+  </app-parallax-layer>
+  <app-parallax-layer [parallaxDistance]="fgParallaxDistance">
+    <app-center-block>
+      <ng-content></ng-content>
+    </app-center-block>
+  </app-parallax-layer>
+</app-parallaxer>

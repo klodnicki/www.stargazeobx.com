@@ -6,16 +6,28 @@ $innerPadding: 2vmin;
 
   > * {
     width: 100%;
+    padding: $innerPadding;
 
     &.wholescreen {
       min-height: calc(100vh - #{2 * $edgeMargin});
     }
 
+    &.fill {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+
+      > * { flex-grow: 1; }
+    }
+
     &.columns {
       display: flex;
       flex-direction: row;
+      padding: 0px;
+      align-items: stretch;
 
       > * {
+        flex-basis: 0;
         flex-grow: 1;
 
         &.thin { flex-grow: 0.5; }
