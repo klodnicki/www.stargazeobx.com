@@ -1,5 +1,21 @@
 <app-block backgroundImage="url('assets/patio.jpg')">
-  <p>
-    amenities works!
-  </p>
+  <h2>Amenities!</h2>
+</app-block>
+<section class="columns">
+  <app-parallaxer>
+    <app-parallax-layer [parallaxDistance]="1">
+      <h2>Hello.</h2>
+    </app-parallax-layer>
+    <app-parallax-layer [parallaxDistance]="1.2">
+      <app-fitted-image imageUrl="assets/patio.jpg"></app-fitted-image>
+    </app-parallax-layer>
+  </app-parallaxer>
+  <div>
+    <h1>DEF</h1>
+    <p>Lorem ipsum</p>
+    <p>Dolor sit amet.</p>
+  </div>
+</section>
+<app-block backgroundImage="url('assets/patio.jpg')">
+  <h2>Amenities!</h2>
 </app-block>

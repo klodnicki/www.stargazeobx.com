@@ -12,6 +12,9 @@ import { BlockSideTitleComponent } from './common/block-side-title/block-side-ti
 import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './pages/amenities/amenities.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { ParallaxerComponent } from './common/parallaxer/parallaxer.component';
+import { ParallaxLayerComponent } from './common/parallaxer/parallax-layer/parallax-layer.component';
+import { FittedImageComponent } from './common/fitted-image/fitted-image.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { Error404Component } from './pages/error404/error404.component';
     BlockSideTitleComponent,
     FooterComponent,
     AmenitiesComponent,
-    Error404Component
+    Error404Component,
+    ParallaxerComponent,
+    ParallaxLayerComponent,
+    FittedImageComponent,
   ],
   imports: [
     BrowserModule,

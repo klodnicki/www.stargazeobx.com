@@ -3,4 +3,24 @@ $innerPadding: 2vmin;
 
 @mixin page {
   display: block;
+
+  > * {
+    width: 100%;
+
+    &.wholescreen {
+      min-height: calc(100vh - #{2 * $edgeMargin});
+    }
+
+    &.columns {
+      display: flex;
+      flex-direction: row;
+
+      > * {
+        flex-grow: 1;
+
+        &.thin { flex-grow: 0.5; }
+        &.wide { flex-grow: 2; }
+      }
+    }
+  }
 }
