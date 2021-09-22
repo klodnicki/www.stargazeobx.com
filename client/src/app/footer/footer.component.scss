@@ -1,12 +1,16 @@
 @import "../../style-defs.scss";
 
-#footerFlex {
-  display: flex;
-  justify-content: stretch;
-  background: rgb(160, 160, 160);
+:host {
+  display: block;
 
-  > * {
-    flex-grow: 1;
-    padding: $innerPadding;
+  #footerFlex {
+    display: flex;
+    justify-content: stretch;
+    background: rgb(160, 160, 160);
+
+    > * {
+      flex-grow: 1;
+      padding: $innerPadding;
+    }
   }
 }
