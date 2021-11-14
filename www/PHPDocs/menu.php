@@ -7,6 +7,7 @@
 	div#menu a {
 		color: blue;
 		text-decoration: none;
+		display: inline-block;
 	}
 	div#menu a:hover {
 		text-decoration: underline;
